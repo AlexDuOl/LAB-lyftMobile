@@ -10,6 +10,15 @@ function myFunction() {
     myVar = setTimeout(function(){ alert("Hello") }, 3000);
 }*/
 
+function myFunction() {
+    document.getElementById("signupButtom").
+    object.addEventListener("click", myScript);
+  }
+
+
+
+
+
 
 $(document).ready(function() {
     $('input#input_text, textarea#textarea2').characterCounter();
