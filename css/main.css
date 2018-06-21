@@ -1,0 +1,48 @@
+ /*Primera seccion*/
+body {
+    border: 0;
+    margin: 0;
+  }
+
+main.container {
+    height: 1500px;
+    width: 100%;
+  }
+
+  .containerProgress {
+    padding:10%;
+    padding-top: 80%;
+  }
+
+ /*Imagenes y logos*/
+
+ .generalContainer {
+  background-image: url("../assets/images/auto1.jpg");
+  background-size: cover;
+  background-repeat: none;
+  height: 1500px;
+  width: 100%;
+}
+
+img.logoW {
+  margin-top: 50%;
+  margin-left: 10%;
+  width: 100%;
+}
+
+/*Botones*/
+
+.botones {
+  border: none;
+  margin-top: 100%;
+  margin-left: 5%;
+  padding: 0;
+}
+
+buton {
+  border: none;
+  margin-top: 100%;
+  margin-left: 10%;
+  padding: 0;
+}
+
