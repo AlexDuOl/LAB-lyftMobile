@@ -29,10 +29,8 @@ $("#icon_telephone").keyup(function(){
 });
 
 
-/*Validación de numero telefónico*/
-document.getElementById("icon_telephone").addEventListener("click", myFunction);
+/*Generando numero aleatorio*/
+$("#valida").click(function(myFuntion){
+  alert("Tu código: LAB-551");
+})
 
-function myFunction() {
-    document.getElementById("icon_telephone");
-    alert("Tu código: LAB-551");
-}
