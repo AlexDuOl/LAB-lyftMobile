@@ -1,12 +1,8 @@
-/*Redireccionar la pagina 
+/*Redireccionar la pagina */
 
-var time = 4000;
-var url = 'index.html';
-var timeoutID = setTimeout(function() {
-    window.location.href = url;
-}, time);
-
-/*clearTimeout(timeoutID);*/
+$("#splash").fadeOut(2500, function(){
+  window.location = "index.html";
+});
 
 /*Materialize*/
 function myFunction() {
@@ -14,18 +10,24 @@ function myFunction() {
     object.addEventListener("click", myScript);
   }
 
-
 $(document).ready(function() {
     $('input#input_text, textarea#textarea2').characterCounter();
   });
 
 $(".dropdown-trigger").dropdown();
 
+
 /*Validación de numero telefónico*/
-valor = document.getElementById("icon_telephone").value;
-if( !(/^\d{10}$/.test(valor)) ) {
-  return = false;
-};
+$("#icon_telephone").keyup(function(){
+  var valor = $(this).val();
+  if((/^\d{9}$/.test(valor))) {
+  console.log("valida");
+  $("#valida").removeClass("disabled");
+} else {
+  $("#valida").addClass("disabled");
+}
+});
+
 
 /*Validación de numero telefónico*/
 document.getElementById("icon_telephone").addEventListener("click", myFunction);
