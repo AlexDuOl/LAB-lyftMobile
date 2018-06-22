@@ -33,6 +33,7 @@ img.logoW {
 /*Botones*/
 
 .botones {
+  border-style: none;
   border: none;
   margin-top: 100%;
   margin-left: 5%;
@@ -40,9 +41,22 @@ img.logoW {
 }
 
 buton {
+  border-style: none;
   border: none;
   margin-top: 100%;
   margin-left: 10%;
   padding: 0;
+}
+
+button {
+  border-style: none;
+  margin-left: 10%;
+  width: 100%;
+}
+
+.next {
+  border-style: none;
+  border: none;
+  margin-left: 10%;
 }
 

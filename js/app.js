@@ -1,23 +1,18 @@
-/*Redireccionar la pagina
-function openWin() {
-    var myWindow = window.open("", "myWindow", "width=200, height=100");
-    setTimeout(function(){ myWindow.open() }, 3000);
-}
+/*Redireccionar la pagina 
 
-var myVar;
+var time = 4000;
+var url = 'index.html';
+var timeoutID = setTimeout(function() {
+    window.location.href = url;
+}, time);
 
-function myFunction() {
-    myVar = setTimeout(function(){ alert("Hello") }, 3000);
-}*/
+/*clearTimeout(timeoutID);*/
 
+/*Materialize*/
 function myFunction() {
     document.getElementById("signupButtom").
     object.addEventListener("click", myScript);
   }
-
-
-
-
 
 
 $(document).ready(function() {
@@ -25,3 +20,17 @@ $(document).ready(function() {
   });
 
 $(".dropdown-trigger").dropdown();
+
+/*Validación de numero telefónico*/
+valor = document.getElementById("icon_telephone").value;
+if( !(/^\d{10}$/.test(valor)) ) {
+  return = false;
+};
+
+/*Validación de numero telefónico*/
+document.getElementById("icon_telephone").addEventListener("click", myFunction);
+
+function myFunction() {
+    document.getElementById("icon_telephone");
+    alert("Tu código: LAB-551");
+}
