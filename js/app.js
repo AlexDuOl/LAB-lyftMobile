@@ -30,7 +30,11 @@ $("#icon_telephone").keyup(function(){
 
 
 /*Generando numero aleatorio*/
-$("#valida").click(function(myFuntion){
-  alert("Tu código: LAB-551");
-})
+
+$("#valida").click(function(){
+  var random = Math.round((Math.random() * (9 - 0) + 0)*1000);
+  console.log(random);
+  alert("Tu código: " + "LAB-" + random);
+});
+
 
